@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import images from "../constants/images";
 import {
@@ -17,9 +17,15 @@ const Language = () => {
     { code: "en", nameTh: "ภาษาอังกฤษ", nameEn: "English", flag: images.usa },
   ];
 
+  useEffect(() => {
+    if (!languages.some((lang) => lang.code === currentLanguage)) {
+      i18n.changeLanguage("en");
+    }
+  }, []);
+
   const getCurrentFlag = () => {
     const current = languages.find((lang) => lang.code === currentLanguage);
-    return current ? current.flag : images.thailand;
+    return current ? current.flag : images.usa;
   };
 
   const handleLanguageChange = (languageCode) => {
