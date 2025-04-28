@@ -1,0 +1,19 @@
+import { Routes, Route, Navigate } from "react-router-dom";
+import SummaryPage from "./pages/SummaryPage";
+import MyTaskPage from "./pages/MyTaskPage";
+import MainLayout from "./layout/MainLayout";
+import "./locales";
+
+function App() {
+  return (
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Navigate to="/summary" />} />
+        <Route path="/summary" element={<SummaryPage />} />
+        <Route path="/my-task" element={<MyTaskPage />} />
+      </Route>
+    </Routes>
+  );
+}
+
+export default App;
