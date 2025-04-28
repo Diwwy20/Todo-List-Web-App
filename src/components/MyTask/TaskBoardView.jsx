@@ -41,11 +41,11 @@ const TaskBoardView = ({
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {Object.entries(tasksByStatus).map(([status, tasks]) => (
         <div
           key={status}
-          className={`bg-white dark:bg-gray-400 p-4 rounded-lg ${
+          className={`bg-white dark:bg-gray-400 p-4 shadow-sm rounded-lg ${
             dragOverColumn === status ? "bg-gray-100" : ""
           }`}
           onDragOver={(e) => handleDragOver(e, status)}

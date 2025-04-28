@@ -1,8 +1,8 @@
 import images from "@/constants/images";
 import { Link, useLocation } from "react-router-dom";
 import { useTaskContext } from "@/context/TaskContext";
-import Language from "@/components/Language"; // <== import Language เข้ามา
-import { DarkMode } from "@/components/DarkMode"; // <== import DarkMode เข้ามา
+import Language from "@/components/Language";
+import { DarkMode } from "@/components/DarkMode";
 import { useTranslation } from "react-i18next";
 
 const Sidebar = ({ isOpen, onClose }) => {

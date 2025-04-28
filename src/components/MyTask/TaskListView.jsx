@@ -13,7 +13,7 @@ const TaskListView = ({ todayTasks, overdueTasks, taskItemProps }) => {
         </h3>
         <div className="bg-white dark:bg-gray-400 p-4 rounded-lg shadow">
           {todayTasks.length === 0 ? (
-            <p className="text-center py-4 dark:text-black">
+            <p className="text-gray-500 text-center py-4 dark:text-black">
               {t("No_Task_For_Today")}
             </p>
           ) : (
