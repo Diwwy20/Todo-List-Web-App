@@ -203,7 +203,7 @@ const Summary = () => {
         </div>
 
         {/* ----- Recently Task Section ----- */}
-        <div className="bg-white p-6 rounded-lg dark:bg-gray-400">
+        <div className="bg-white p-6 rounded-lg shadow-sm dark:bg-gray-400">
           <h3 className="text-gray-600 text-lg mb-4 dark:text-white">
             {t("Recently_Added_Tasks")}
           </h3>
