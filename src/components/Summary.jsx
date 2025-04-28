@@ -70,7 +70,7 @@ const Summary = () => {
     <div className="flex-1 p-6 lg:ml-0 dark:bg-gray-300 dark:min-h-screen">
       <div className="flex items-center gap-3 my-8">
         <LayoutDashboard className="w-8 h-8 text-indigo-600" />
-        <h2 className="text-3xl font-bold text-gray-900">
+        <h2 className="text-gray-500 text-3xl font-bold dark:text-black">
           {t("Dashboard_Summary")}
         </h2>
       </div>
