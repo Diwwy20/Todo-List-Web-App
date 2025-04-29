@@ -143,7 +143,7 @@ const Summary = () => {
                 <Tooltip />
               </PieChart>
             ) : (
-              <div className="absolute inset-0 flex items-center justify-center text-gray-400">
+              <div className="absolute inset-0 flex items-center justify-center text-gray-400 dark:text-black">
                 {t("No_Task_To_Display")}
               </div>
             )}
