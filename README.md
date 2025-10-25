@@ -13,6 +13,6 @@ Clone the repository to your local machine using the command below:
 ```
 1.git clone https://github.com/Diwwy20/Todo-List-Web-App
 
-2.npm install --legacy-peer-deps && npm i --legacy-peer-deps 
+2.npm install --legacy-peer-deps or npm i --legacy-peer-deps 
 
 3.npm run dev to run the project
