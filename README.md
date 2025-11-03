@@ -16,3 +16,9 @@ Clone the repository to your local machine using the command below:
 2.npm install --legacy-peer-deps or npm i --legacy-peer-deps 
 
 3.npm run dev to run the project
+```
+
+## 🌍 Live Demo
+
+You can try Todo List instantly — no setup needed!
+👉 https://todo-matex.netlify.app/
